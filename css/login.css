@@ -1,0 +1,83 @@
+.form-container{
+    height: 450px;
+    width: 200px;
+    padding-top:40px;
+    position: relative;
+    padding-left: 20px;;
+    padding-right: 20px;
+    background-color: red;
+    display: flex;
+    margin-left: 300px;
+    flex-direction: column;
+    align-items: center;
+border-radius: 30px;
+color:White;
+background-image: url("../assets/bg-login.jpg");
+}
+
+.logo img{
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+
+}
+
+.header{
+    color:White;
+    font-weight: bolder;
+}
+
+
+.first-name{
+    position: absolute;
+    top:148px;
+    left:30px;
+}
+
+
+.fname-input{
+    position: absolute;
+    top:172px;
+    left:29px;
+}
+
+
+.lname-input{
+position: absolute;
+top:216px;
+left:29px;
+}
+
+.password{
+
+    position: absolute;
+    top:195px;
+    left:30px;
+}
+
+
+.show{
+    position: absolute;
+    top:250px;
+    left:29px;
+}
+
+
+.btn-login{
+    position: absolute;
+    top:275px;
+    left:40px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border:0px solid transparent;
+    transition: 0.3s ease-in 0.3s;
+}
+
+
+.btn-login:hover{
+    border-bottom:5px solid green;
+
+}
+
+

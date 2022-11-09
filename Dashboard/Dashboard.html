@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="../css/Dashboard.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+</head>
+<body id="screen">
+    <div class="container">
+       <aside>
+        <div class="top">
+            <div class="logo-dash">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+            </div>
+            <div class="close" id="close-btn">
+                x
+            </div>
+        </div>
+        <div class="sidebar" id="side">
+            <a href="#" class="active menu-list"><span class="material-icons md-36">face</span>
+                <h3>Dashboard</h3></a>
+            <a href="#" class="menu-list"><h3>Companies</h3></a>
+
+            <a href="#" class="menu-list"><h3>Report</h3></a>
+
+            <a href="#" class="menu-list"><h3>Settings</h3></a>
+            <a href="#" class="menu-list"><h3>Logs</h3></a>
+            <a href="#" class="menu-list"><h3>Logout</h3></a>
+
+        </div>
+       </aside>
+
+       <div class="middle-section">
+        <div class="title">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="card1">
+<img  class="image" src="../assets/circle.svg">
+<h2>Total Users:</h2>
+<br>
+
+<h2>70,000</h2>
+        </div>
+        <div class="card2">
+            <img  class="iamge" src="../assets/circle.svg">
+            <h2>Total Users:</h2>
+            <br>
+            <button id="pop-up" onclick="popUp()">click to pop</button>
+           
+            
+            <h2>70,000</h2>
+        </div>
+        <div class="card3">
+            <img  class="iamge" src="../assets/circle.svg">
+            <h2>Total Users:</h2>
+            <br>
+            
+            <h2>70,000</h2>
+        </div>
+        
+       <div class="user-logo" id="user-section">
+        <h3>Sumit Khatri</h3>
+        <div class="profile" >
+            <a class="user-option" href="#"> <img src="../assets/person.png" class="profile-image"></a>
+             <div class="menu">
+                <a class="class">
+                    profile
+                </a>
+                <a class="class">
+                    Logout
+                </a>
+             </div>
+        </div>
+        <div class="full-screen">
+            <button id="full-btn" onclick="fullScreen()">Full Screen</button>
+        </div>
+       </div>
+       <div class="charts">
+       <h1>Bar chart about sales</h1>
+        <canvas id="chartOne" class="mt-4"></canvas>
+
+       </div>
+    </div>
+
+
+    <div class="pop">
+        <div>
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+            <button id="close" onclick="popUp()">close</button>
+          </div>
+                
+    </div>
+    <script src="../js/off-canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../js/jquery.cookie.js" type="text/javascript"></script>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/off-canvas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+
+html{
+    font-size:14px
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    font-family: poppins,sans-serif;
+    font-size:0.88rem;
+    background-color: beige;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+
+a{
+    color:cadetblue;
+}
+
+
+img{
+    display:block;
+    width:100%;
+}
+
+
+h1{
+    font-weight: 800;
+    font-size:1.8rem
+}
+
+h2{
+    font-size:1.4rem;
+}
+
+
+h3{
+    font-size:0.87rem;
+}
+
+
+small{
+    font-size:0.75rem;
+}
+
+
+.profile-image{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow:hidden;
+
+}
+
+
+.text-muted{
+    color:darkgray;
+
+}
+
+.container{
+    display:grid;
+    width: 96%;
+    margin:0 auto;
+    gap:1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+
+}
+
+
+aside{
+    height: 100vh;
+}
+
+
+aside .top{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:1.5rem;
+}
+
+aside .logo{
+    display: flex;
+    gap:0.8rem;
+}
+
+aside .logo img{
+    width:2rem;
+    height: 2rem;
+}
+
+
+aside .close{
+    display: none;
+}
+
+aside .sidebar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top:3rem
+}
+
+
+aside h3{
+    font-weight: 500;
+}
+
+
+aside .sidebar a{
+    display: flex;
+    color:grey;
+    margin-left: 2rem;
+    gap:1rem;
+    align-items: center;
+    position: relative;
+    height:3.7rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a span{
+    font-size:1.6rem;
+}
+aside .sidebar a.active{
+    background-color: bisque;
+    color:#0275d8;
+    margin-left: 0;
+}
+aside .sidebar a:active:before{
+content: "";
+width: 6px;
+height: 100%;
+background:#0275d8;
+}
+
+aside .sidebar a.active span{
+    color:#0275d8;
+    margin-left:cal(1rem-3px)
+
+}
+
+
+
+
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom:2rem;
+    width: 100%;
+
+}
+
+
+
+aside .sidebar a.active{
+    background-color: rgb(83, 208, 179);
+
+    color:white;
+    margin-left:0;
+    
+}
+
+
+
+
+
+
+.user-logo{
+    grid-column: 3/3;
+    position: relative;
+    top:-82px;
+    height: 20px;
+    right: -65px;
+    background-color: red;
+
+}
+
+
+.user-logo  h3{
+    position: absolute;
+    top:13px;
+    left:38px;
+
+}
+
+
+.user-logo .full-screen button{
+    position: absolute;
+    top:15px;
+    left:125px;
+}
+
+.user-logo .profile .menu{
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top:40px;
+    left:25px;
+
+
+
+}
+.user-logo .profile .menu a.class{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    height: 30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+margin-left:15px;
+
+    
+}
+
+
+.user-logo .profile .menu a:hover{
+    background-color: red;
+}
+
+.user-logo .profile .menu a:last-child{
+  border-top:2px solid grey;
+  
+}
+
+
+.menu-list:hover{
+    border-bottom: 2px solid green;
+    margin-left:1rem;
+}
+
+
+
+.middle-section{
+    background-color: #f2edf3;
+    position: relative;
+    top:7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    column-gap: 20px;
+    width: 60vw;;
+    row-gap: 10px;
+
+}
+
+
+.card1{
+    position: absolute;
+    top:40px;
+    background-color:  #dc3545!important;
+
+grid-row: 1/1;
+grid-column: 1/2;
+height:200px;
+width:200px;
+padding:2.5rem 2.5rem;
+}
+
+.middle-section img{
+    position: absolute;
+    top:1px;
+}
+
+
+.card2{
+    background-color:  #dc3545!important;
+
+grid-column: 2/3;
+height:200px;
+width:200px;
+position: absolute;
+    top:40px;
+padding:2.5rem 2.5rem;
+
+}
+
+
+.card3{
+    position: absolute;
+    top:40px;
+    grid-column: 3/4;
+    background-color:  #dc3545!important;
+
+height:200px;
+width:200px;
+padding:2.5rem 2.5rem;
+
+}
+
+
+.middle-section .charts{
+    position: absolute;
+    grid-row: 2/2;
+    background-color: white;
+    width: 60vw;
+    text-align: center;
+    top:-240px;
+    height: 50vh;
+}
+
+
+
+.pop{
+    width: 80vw;
+    position: absolute;
+    height: 80vh;
+    top:210px;
+    left:170px;
+    display: none;
+z-index: 4;
+    background-color: rebeccapurple;
+}
+
+#pop-up{
+    position: absolute;
+    z-index:2;
+}
+#pop-up:hover{
+    background-color: red;
+}
+
+#close{
+    position: absolute;
+    z-index:5;
+    left:20px;
+}
